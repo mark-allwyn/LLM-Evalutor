@@ -1,0 +1,485 @@
+[
+  {
+    "id": "math_arithmetic_1",
+    "prompt": "Calculate: 1,247 × 893",
+    "expected_output": "1,113,571",
+    "category": "math_arithmetic",
+    "metadata": {"difficulty": "medium", "type": "multiplication", "requires_precision": true}
+  },
+  {
+    "id": "math_arithmetic_2",
+    "prompt": "What is 2,856 ÷ 42?",
+    "expected_output": "68",
+    "category": "math_arithmetic",
+    "metadata": {"difficulty": "medium", "type": "division", "requires_precision": true}
+  },
+  {
+    "id": "math_arithmetic_3",
+    "prompt": "Calculate 15% of $3,247.89",
+    "expected_output": "$487.18",
+    "category": "math_arithmetic",
+    "metadata": {"difficulty": "medium", "type": "percentage", "real_world": true}
+  },
+  {
+    "id": "math_word_problem_1",
+    "prompt": "Sarah has 3 times as many apples as John. Together they have 48 apples. How many apples does Sarah have?",
+    "expected_output": "36 apples",
+    "category": "math_word_problems",
+    "metadata": {"difficulty": "medium", "type": "algebra", "multi_step": true}
+  },
+  {
+    "id": "math_word_problem_2",
+    "prompt": "A train travels 420 miles in 7 hours. If it maintains the same speed, how long will it take to travel 780 miles?",
+    "expected_output": "13 hours",
+    "category": "math_word_problems",
+    "metadata": {"difficulty": "medium", "type": "proportion", "real_world": true}
+  },
+  {
+    "id": "math_geometry_1",
+    "prompt": "What is the area of a circle with radius 8.5 meters? (Use π = 3.14159)",
+    "expected_output": "226.98 square meters",
+    "category": "math_geometry",
+    "metadata": {"difficulty": "medium", "type": "area_calculation", "formula_required": true}
+  },
+  {
+    "id": "math_probability_1",
+    "prompt": "What is the probability of rolling two dice and getting a sum of 7?",
+    "expected_output": "1/6 or 16.67%",
+    "category": "math_probability",
+    "metadata": {"difficulty": "hard", "type": "combinatorics", "multiple_valid_formats": true}
+  },
+  {
+    "id": "logic_deductive_1",
+    "prompt": "All roses are flowers. Some flowers are red. Therefore, what can we conclude about roses?",
+    "expected_output": "Some roses may be red, but we cannot conclude that all roses are red.",
+    "category": "logic_deductive",
+    "metadata": {"difficulty": "medium", "type": "syllogism", "requires_careful_reasoning": true}
+  },
+  {
+    "id": "logic_deductive_2",
+    "prompt": "If it rains, then the ground gets wet. The ground is not wet. What can we conclude?",
+    "expected_output": "It did not rain.",
+    "category": "logic_deductive",
+    "metadata": {"difficulty": "medium", "type": "modus_tollens", "logical_form": true}
+  },
+  {
+    "id": "logic_pattern_1",
+    "prompt": "What comes next in this sequence: 2, 6, 18, 54, ?",
+    "expected_output": "162",
+    "category": "logic_patterns",
+    "metadata": {"difficulty": "medium", "type": "geometric_sequence", "pattern_recognition": true}
+  },
+  {
+    "id": "logic_pattern_2",
+    "prompt": "Complete the pattern: A1, C3, E5, G7, ?",
+    "expected_output": "I9",
+    "category": "logic_patterns",
+    "metadata": {"difficulty": "medium", "type": "letter_number_pattern", "dual_progression": true}
+  },
+  {
+    "id": "reasoning_analytical_1",
+    "prompt": "Five friends are sitting in a row. Alice is not at either end. Bob is to the left of Charlie. Diana is between Alice and Eve. Charlie is not next to Alice. What is the seating arrangement from left to right?",
+    "expected_output": "Bob, Diana, Alice, Eve, Charlie (or Eve, Diana, Alice, Charlie, Bob)",
+    "category": "reasoning_analytical",
+    "metadata": {"difficulty": "hard", "type": "constraint_satisfaction", "multiple_constraints": true}
+  },
+  {
+    "id": "reasoning_analytical_2",
+    "prompt": "In a family of 6 people, there are 2 parents and 4 children. The sum of all their ages is 90. The parents are the same age. Each child is 2 years older than the next youngest. The youngest child is 8. What are the ages of the parents?",
+    "expected_output": "The parents are each 26 years old.",
+    "category": "reasoning_analytical",
+    "metadata": {"difficulty": "hard", "type": "age_problem", "multi_constraint_algebra": true}
+  },
+  {
+    "id": "reasoning_causal_1",
+    "prompt": "A company's sales dropped 30% after they raised prices by 25%. What are three possible explanations for this outcome?",
+    "expected_output": null,
+    "category": "reasoning_causal",
+    "metadata": {"difficulty": "medium", "type": "business_analysis", "open_ended": true, "requires_multiple_hypotheses": true}
+  },
+  {
+    "id": "science_physics_1",
+    "prompt": "If you drop a feather and a hammer simultaneously from the same height on the Moon, which will hit the ground first and why?",
+    "expected_output": "They will hit the ground at the same time because there is no air resistance on the Moon, so gravitational acceleration affects all objects equally regardless of mass.",
+    "category": "science_physics",
+    "metadata": {"difficulty": "medium", "type": "gravity", "conceptual_understanding": true}
+  },
+  {
+    "id": "science_physics_2",
+    "prompt": "A car accelerates from 0 to 60 mph in 8 seconds. What is its average acceleration in m/s²? (1 mph = 0.447 m/s)",
+    "expected_output": "3.35 m/s²",
+    "category": "science_physics",
+    "metadata": {"difficulty": "hard", "type": "kinematics", "unit_conversion": true, "calculation_required": true}
+  },
+  {
+    "id": "science_chemistry_1",
+    "prompt": "Balance this chemical equation: C₂H₆ + O₂ → CO₂ + H₂O",
+    "expected_output": "2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O",
+    "category": "science_chemistry",
+    "metadata": {"difficulty": "medium", "type": "equation_balancing", "stoichiometry": true}
+  },
+  {
+    "id": "science_biology_1",
+    "prompt": "Explain the process of photosynthesis in exactly three sentences, including the reactants and products.",
+    "expected_output": null,
+    "category": "science_biology",
+    "metadata": {"difficulty": "medium", "type": "process_explanation", "length_constraint": true, "key_concepts_required": true}
+  },
+  {
+    "id": "language_grammar_1",
+    "prompt": "Identify and correct the grammatical error in this sentence: 'Between you and I, this is the most unique solution we've found.'",
+    "expected_output": "The errors are: 'Between you and I' should be 'Between you and me', and 'most unique' should be 'unique' (unique is absolute and cannot be modified).",
+    "category": "language_grammar",
+    "metadata": {"difficulty": "medium", "type": "grammar_correction", "multiple_errors": true}
+  },
+  {
+    "id": "language_vocabulary_1",
+    "prompt": "What is the difference between 'affect' and 'effect'? Provide an example sentence for each.",
+    "expected_output": "'Affect' is a verb meaning to influence something. 'Effect' is a noun meaning a result. Example: 'The rain will affect our picnic plans' and 'The effect of the rain was a cancelled picnic.'",
+    "category": "language_vocabulary",
+    "metadata": {"difficulty": "medium", "type": "word_distinction", "examples_required": true}
+  },
+  {
+    "id": "language_reading_comprehension_1",
+    "prompt": "Read this passage and answer the question:\n\n'The Industrial Revolution, which began in Britain in the late 18th century, fundamentally transformed society. While it brought unprecedented economic growth and technological advancement, it also led to harsh working conditions, child labor, and environmental degradation. The shift from agrarian to industrial society created new social classes and changed the very fabric of human relationships.'\n\nQuestion: What were both the positive and negative consequences of the Industrial Revolution mentioned in the passage?",
+    "expected_output": "Positive consequences: unprecedented economic growth and technological advancement. Negative consequences: harsh working conditions, child labor, and environmental degradation.",
+    "category": "language_reading_comprehension",
+    "metadata": {"difficulty": "medium", "type": "factual_extraction", "requires_categorization": true}
+  },
+  {
+    "id": "creative_poetry_1",
+    "prompt": "Write a limerick about artificial intelligence.",
+    "expected_output": null,
+    "category": "creative_poetry",
+    "metadata": {"difficulty": "medium", "type": "limerick", "specific_form": true, "topic_constrained": true}
+  },
+  {
+    "id": "creative_poetry_2",
+    "prompt": "Write a haiku that captures the feeling of a quiet morning in a forest.",
+    "expected_output": null,
+    "category": "creative_poetry",
+    "metadata": {"difficulty": "medium", "type": "haiku", "mood_specific": true, "nature_theme": true}
+  },
+  {
+    "id": "creative_storytelling_1",
+    "prompt": "Write a 2-sentence horror story that doesn't use any violent or graphic imagery.",
+    "expected_output": null,
+    "category": "creative_storytelling",
+    "metadata": {"difficulty": "hard", "type": "micro_fiction", "genre_specific": true, "constraint_based": true, "length_limit": true}
+  },
+  {
+    "id": "creative_storytelling_2",
+    "prompt": "Create a story in exactly 50 words about a character who discovers they can speak to plants.",
+    "expected_output": null,
+    "category": "creative_storytelling",
+    "metadata": {"difficulty": "hard", "type": "flash_fiction", "exact_word_count": true, "premise_given": true}
+  },
+  {
+    "id": "creative_worldbuilding_1",
+    "prompt": "Describe a society where people age backwards. What would be three major social or practical challenges this would create?",
+    "expected_output": null,
+    "category": "creative_worldbuilding",
+    "metadata": {"difficulty": "hard", "type": "speculative_fiction", "logical_extrapolation": true, "specific_count_required": true}
+  },
+  {
+    "id": "coding_python_basic_1",
+    "prompt": "Write a Python function called 'count_vowels' that takes a string as input and returns the number of vowels (a, e, i, o, u) in it. Include both uppercase and lowercase vowels.",
+    "expected_output": null,
+    "category": "coding_python_basic",
+    "metadata": {"difficulty": "easy", "type": "string_processing", "language": "python", "specific_requirements": true}
+  },
+  {
+    "id": "coding_python_basic_2",
+    "prompt": "Write a Python function that checks if a given number is prime. The function should return True if the number is prime, False otherwise.",
+    "expected_output": null,
+    "category": "coding_python_basic",
+    "metadata": {"difficulty": "medium", "type": "algorithm", "language": "python", "mathematical_logic": true}
+  },
+  {
+    "id": "coding_python_intermediate_1",
+    "prompt": "Write a Python function that takes a list of dictionaries representing students with 'name' and 'grade' keys, and returns a new list sorted by grade (highest first), with students having the same grade sorted alphabetically by name.",
+    "expected_output": null,
+    "category": "coding_python_intermediate",
+    "metadata": {"difficulty": "medium", "type": "data_structures", "language": "python", "multi_criteria_sorting": true}
+  },
+  {
+    "id": "coding_algorithm_1",
+    "prompt": "Explain the time complexity of binary search and why it's more efficient than linear search for sorted arrays.",
+    "expected_output": "Binary search has O(log n) time complexity because it eliminates half of the remaining elements in each step. Linear search has O(n) time complexity because it may need to check every element. For large sorted datasets, binary search is much faster.",
+    "category": "coding_algorithms",
+    "metadata": {"difficulty": "medium", "type": "complexity_analysis", "conceptual_understanding": true}
+  },
+  {
+    "id": "coding_debugging_1",
+    "prompt": "Find the bug in this Python code and explain how to fix it:\n\n```python\ndef calculate_average(numbers):\n    total = 0\n    for num in numbers:\n        total += num\n    return total / len(numbers)\n\nresult = calculate_average([])\nprint(result)\n```",
+    "expected_output": "The bug is a division by zero error when an empty list is passed. Fix: Add a check for empty list: 'if not numbers: return 0' or 'if len(numbers) == 0: return 0' before the calculation.",
+    "category": "coding_debugging",
+    "metadata": {"difficulty": "easy", "type": "error_identification", "language": "python", "edge_case": true}
+  },
+  {
+    "id": "history_ancient_1",
+    "prompt": "What were the primary causes of the fall of the Western Roman Empire? Name at least three factors.",
+    "expected_output": null,
+    "category": "history_ancient",
+    "metadata": {"difficulty": "medium", "type": "causal_analysis", "multiple_factors": true, "complex_historical_event": true}
+  },
+  {
+    "id": "history_modern_1",
+    "prompt": "Explain the significance of the Marshall Plan after World War II. What was its purpose and what were its main effects?",
+    "expected_output": null,
+    "category": "history_modern",
+    "metadata": {"difficulty": "medium", "type": "policy_analysis", "cause_and_effect": true, "post_war_period": true}
+  },
+  {
+    "id": "geography_physical_1",
+    "prompt": "Why do hurricanes only form over warm ocean water and lose strength when they move over land?",
+    "expected_output": "Hurricanes need warm ocean water (at least 80°F) to fuel their development through evaporation, which provides energy and moisture. Over land, they lose this energy source and encounter friction and cooler temperatures, causing them to weaken.",
+    "category": "geography_physical",
+    "metadata": {"difficulty": "medium", "type": "process_explanation", "weather_systems": true, "cause_and_effect": true}
+  },
+  {
+    "id": "geography_political_1",
+    "prompt": "Name the capital cities of these countries: Brazil, Australia, South Africa, and Canada.",
+    "expected_output": "Brazil: Brasília, Australia: Canberra, South Africa: Cape Town (legislative), Pretoria (executive), Bloemfontein (judicial), Canada: Ottawa",
+    "category": "geography_political",
+    "metadata": {"difficulty": "medium", "type": "capital_identification", "multiple_countries": true, "tricky_examples": true}
+  },
+  {
+    "id": "economics_basic_1",
+    "prompt": "Explain the law of supply and demand in simple terms with a real-world example.",
+    "expected_output": null,
+    "category": "economics_basic",
+    "metadata": {"difficulty": "medium", "type": "concept_explanation", "example_required": true, "fundamental_principle": true}
+  },
+  {
+    "id": "economics_intermediate_1",
+    "prompt": "What is inflation and how does it affect different groups in society (savers, borrowers, people on fixed incomes)?",
+    "expected_output": null,
+    "category": "economics_intermediate",
+    "metadata": {"difficulty": "medium", "type": "impact_analysis", "multiple_perspectives": true, "economic_concept": true}
+  },
+  {
+    "id": "philosophy_ethics_1",
+    "prompt": "Explain the trolley problem and what it reveals about moral decision-making.",
+    "expected_output": null,
+    "category": "philosophy_ethics",
+    "metadata": {"difficulty": "hard", "type": "thought_experiment", "moral_reasoning": true, "classic_problem": true}
+  },
+  {
+    "id": "philosophy_logic_1",
+    "prompt": "Is this argument valid? 'All cats are animals. Fluffy is an animal. Therefore, Fluffy is a cat.' Explain your reasoning.",
+    "expected_output": "This argument is invalid. While the premises are true, the conclusion doesn't follow logically. Just because all cats are animals doesn't mean all animals are cats. Fluffy could be any type of animal (dog, bird, etc.).",
+    "category": "philosophy_logic",
+    "metadata": {"difficulty": "medium", "type": "argument_evaluation", "logical_fallacy": true, "formal_logic": true}
+  },
+  {
+    "id": "psychology_cognitive_1",
+    "prompt": "What is confirmation bias and how might it affect someone's decision-making in everyday life? Provide a specific example.",
+    "expected_output": null,
+    "category": "psychology_cognitive",
+    "metadata": {"difficulty": "medium", "type": "bias_explanation", "real_world_application": true, "example_required": true}
+  },
+  {
+    "id": "psychology_social_1",
+    "prompt": "Explain the bystander effect. Why are people less likely to help in emergencies when more people are present?",
+    "expected_output": null,
+    "category": "psychology_social",
+    "metadata": {"difficulty": "medium", "type": "phenomenon_explanation", "social_behavior": true, "counterintuitive": true}
+  },
+  {
+    "id": "current_events_analysis_1",
+    "prompt": "What are three major challenges that remote work poses for companies, and what are potential solutions for each?",
+    "expected_output": null,
+    "category": "current_events_analysis",
+    "metadata": {"difficulty": "medium", "type": "problem_solution", "contemporary_issue": true, "business_context": true}
+  },
+  {
+    "id": "technology_concepts_1",
+    "prompt": "Explain what artificial intelligence is, how it differs from traditional computer programming, and give two examples of AI applications in daily life.",
+    "expected_output": null,
+    "category": "technology_concepts",
+    "metadata": {"difficulty": "medium", "type": "technology_explanation", "examples_required": true, "comparison_required": true}
+  },
+  {
+    "id": "technology_trends_1",
+    "prompt": "What are the potential benefits and risks of widespread adoption of autonomous vehicles? Name at least two of each.",
+    "expected_output": null,
+    "category": "technology_trends",
+    "metadata": {"difficulty": "medium", "type": "impact_analysis", "balanced_perspective": true, "emerging_technology": true}
+  },
+  {
+    "id": "health_medical_1",
+    "prompt": "Explain why antibiotics are ineffective against viral infections like the common cold or flu.",
+    "expected_output": "Antibiotics work by targeting specific structures or processes in bacteria, such as cell walls or protein synthesis. Viruses are fundamentally different - they don't have cell walls and rely on host cells for reproduction. Antibiotics cannot target viral replication mechanisms.",
+    "category": "health_medical",
+    "metadata": {"difficulty": "medium", "type": "biological_explanation", "common_misconception": true, "mechanism_explanation": true}
+  },
+  {
+    "id": "health_nutrition_1",
+    "prompt": "What's the difference between simple and complex carbohydrates? How do they affect blood sugar differently?",
+    "expected_output": null,
+    "category": "health_nutrition",
+    "metadata": {"difficulty": "medium", "type": "nutritional_science", "comparison": true, "physiological_effects": true}
+  },
+  {
+    "id": "business_strategy_1",
+    "prompt": "What is a SWOT analysis and how would you use it to evaluate a small local restaurant's business situation?",
+    "expected_output": null,
+    "category": "business_strategy",
+    "metadata": {"difficulty": "medium", "type": "business_tool", "practical_application": true, "specific_scenario": true}
+  },
+  {
+    "id": "business_finance_1",
+    "prompt": "Explain the difference between revenue, profit, and cash flow. Why might a profitable company still face cash flow problems?",
+    "expected_output": null,
+    "category": "business_finance",
+    "metadata": {"difficulty": "medium", "type": "financial_concepts", "multiple_definitions": true, "scenario_explanation": true}
+  },
+  {
+    "id": "communication_persuasion_1",
+    "prompt": "Write a 3-sentence elevator pitch for a mobile app that helps people track their daily water intake.",
+    "expected_output": null,
+    "category": "communication_persuasion",
+    "metadata": {"difficulty": "medium", "type": "persuasive_writing", "length_constraint": true, "specific_product": true}
+  },
+  {
+    "id": "communication_explanation_1",
+    "prompt": "Explain how email works to someone who has never used the internet, using only analogies to physical mail and everyday objects.",
+    "expected_output": null,
+    "category": "communication_explanation",
+    "metadata": {"difficulty": "hard", "type": "analogy_explanation", "constraint_based": true, "audience_specific": true}
+  },
+  {
+    "id": "problem_solving_lateral_1",
+    "prompt": "A man lives on the 20th floor of an apartment building. Every morning he takes the elevator down to the ground floor. When he comes home, he takes the elevator to the 10th floor and walks the rest of the way, except on rainy days when he takes it all the way up. Why?",
+    "expected_output": "The man is too short to reach the button for the 20th floor, so he can only reach the 10th floor button. On rainy days, he has an umbrella which he can use to reach the higher button.",
+    "category": "problem_solving_lateral",
+    "metadata": {"difficulty": "hard", "type": "lateral_thinking", "puzzle": true, "requires_assumption_breaking": true}
+  },
+  {
+    "id": "problem_solving_optimization_1",
+    "prompt": "You have a 3-gallon jug and a 5-gallon jug, both empty. How can you measure exactly 4 gallons of water using only these jugs and a water source?",
+    "expected_output": "Fill the 5-gallon jug. Pour 3 gallons into the 3-gallon jug, leaving 2 gallons in the 5-gallon jug. Empty the 3-gallon jug. Pour the 2 gallons from the 5-gallon jug into the 3-gallon jug. Fill the 5-gallon jug again. Pour 1 gallon from the 5-gallon jug into the 3-gallon jug (which now has 2 gallons), leaving exactly 4 gallons in the 5-gallon jug.",
+    "category": "problem_solving_optimization",
+    "metadata": {"difficulty": "hard", "type": "measurement_puzzle", "multi_step": true, "classic_problem": true}
+  },
+  {
+    "id": "critical_thinking_bias_1",
+    "prompt": "A study claims that people who drink coffee live longer. What are three potential flaws or alternative explanations for this finding that you should consider before accepting this conclusion?",
+    "expected_output": null,
+    "category": "critical_thinking_bias",
+    "metadata": {"difficulty": "hard", "type": "study_evaluation", "multiple_considerations": true, "research_literacy": true}
+  },
+  {
+    "id": "critical_thinking_source_1",
+    "prompt": "You see a social media post claiming that eating chocolate prevents heart disease, citing 'a recent study.' What questions should you ask to evaluate the reliability of this claim?",
+    "expected_output": null,
+    "category": "critical_thinking_source",
+    "metadata": {"difficulty": "medium", "type": "source_evaluation", "media_literacy": true, "question_generation": true}
+  },
+  {
+    "id": "cultural_awareness_1",
+    "prompt": "Explain why direct eye contact during conversation is considered respectful in some cultures but disrespectful in others. What does this teach us about cross-cultural communication?",
+    "expected_output": null,
+    "category": "cultural_awareness",
+    "metadata": {"difficulty": "medium", "type": "cultural_comparison", "communication_norms": true, "broader_implications": true}
+  },
+  {
+    "id": "cultural_context_1",
+    "prompt": "What are three things that someone from another culture should know before doing business in your country?",
+    "expected_output": null,
+    "category": "cultural_context",
+    "metadata": {"difficulty": "medium", "type": "cultural_advice", "business_context": true, "practical_application": true}
+  },
+  {
+    "id": "instruction_following_format_1",
+    "prompt": "Write a response that contains exactly 4 sentences, where the first sentence starts with 'Technology', the second sentence contains exactly 12 words, the third sentence asks a question, and the fourth sentence ends with an exclamation mark.",
+    "expected_output": null,
+    "category": "instruction_following",
+    "metadata": {"difficulty": "hard", "type": "format_constraints", "multiple_constraints": true, "exact_requirements": true}
+  },
+  {
+    "id": "instruction_following_content_1",
+    "prompt": "Describe the color blue without using any color words (blue, azure, cerulean, etc.) or direct comparisons to colored objects (sky, ocean, etc.).",
+    "expected_output": null,
+    "category": "instruction_following",
+    "metadata": {"difficulty": "hard", "type": "content_constraints", "creative_constraint": true, "linguistic_challenge": true}
+  },
+  {
+    "id": "memory_recall_1",
+    "prompt": "I'm going to give you a list of items, and then ask you to recall them. Here's the list: telescope, bicycle, sandwich, umbrella, keyboard, candle, magazine, wallet. Now, without looking back at the list, tell me all the items that contained the letter 'e'.",
+    "expected_output": "telescope, bicycle, umbrella, keyboard, candle, magazine, wallet",
+    "category": "memory_recall",
+    "metadata": {"difficulty": "medium", "type": "selective_recall", "working_memory": true, "filtering_task": true}
+  },
+  {
+    "id": "attention_detail_1",
+    "prompt": "Count the number of times the letter 'F' appears in this sentence: 'Finished files are the result of years of scientific study combined with the experience of years.'",
+    "expected_output": "6",
+    "category": "attention_detail",
+    "metadata": {"difficulty": "hard", "type": "visual_attention", "common_error_prone": true, "counting_task": true}
+  },
+  {
+    "id": "synthesis_comparison_1",
+    "prompt": "Compare and contrast renewable and non-renewable energy sources. Create a table with at least 4 comparison criteria.",
+    "expected_output": null,
+    "category": "synthesis_comparison",
+    "metadata": {"difficulty": "medium", "type": "comparative_analysis", "structured_format": true, "multiple_criteria": true}
+  },
+  {
+    "id": "synthesis_integration_1",
+    "prompt": "How might climate change, artificial intelligence, and an aging population interact with each other to create new challenges for society in the next 20 years?",
+    "expected_output": null,
+    "category": "synthesis_integration",
+    "metadata": {"difficulty": "hard", "type": "multi_factor_analysis", "future_prediction": true, "complex_interactions": true}
+  },
+  {
+    "id": "evaluation_judgment_1",
+    "prompt": "A city is considering banning single-use plastic bags. Present the strongest argument both for and against this policy, then state which position you find more convincing and why.",
+    "expected_output": null,
+    "category": "evaluation_judgment",
+    "metadata": {"difficulty": "hard", "type": "policy_evaluation", "balanced_analysis": true, "personal_judgment": true}
+  },
+  {
+    "id": "metacognition_1",
+    "prompt": "Describe your thought process for solving this problem: 'If 5 machines can make 5 widgets in 5 minutes, how long would it take 100 machines to make 100 widgets?' Include any assumptions you make.",
+    "expected_output": null,
+    "category": "metacognition",
+    "metadata": {"difficulty": "hard", "type": "process_explanation", "mathematical_reasoning": true, "assumption_identification": true}
+  },
+  {
+    "id": "error_detection_1",
+    "prompt": "Find all the errors in this paragraph: 'The principle of the school announced that there planning a new principle for next years graduating class. The affect of this decision will effect all students who are planning to attend the ceremony in june.'",
+    "expected_output": "Errors: 'principle' should be 'principal' (first instance), 'there' should be 'they're', 'principle' should be 'principal' (second instance), 'years' should be 'year's', 'affect' should be 'effect', 'effect' should be 'affect', 'june' should be 'June'.",
+    "category": "error_detection",
+    "metadata": {"difficulty": "hard", "type": "proofreading", "multiple_error_types": true, "homophone_errors": true}
+  },
+  {
+    "id": "spatial_reasoning_1",
+    "prompt": "Imagine a cube. If you paint all six faces red, then cut the cube into 27 smaller cubes (3x3x3), how many of the small cubes will have exactly 2 red faces?",
+    "expected_output": "12",
+    "category": "spatial_reasoning",
+    "metadata": {"difficulty": "hard", "type": "3d_visualization", "geometric_reasoning": true, "counting_problem": true}
+  },
+  {
+    "id": "temporal_reasoning_1",
+    "prompt": "If it's 3:45 PM in New York (EST), what time is it in Tokyo (JST)? Show your calculation. (EST is UTC-5, JST is UTC+9)",
+    "expected_output": "5:45 AM the next day in Tokyo. Calculation: 3:45 PM EST + 14 hours time difference = 5:45 AM JST next day.",
+    "category": "temporal_reasoning",
+    "metadata": {"difficulty": "medium", "type": "time_zone_calculation", "calculation_required": true, "international_context": true}
+  },
+  {
+    "id": "analogical_reasoning_1",
+    "prompt": "Complete this analogy: Book is to Author as Symphony is to ________. Explain your reasoning.",
+    "expected_output": "Composer. A book is created by an author, just as a symphony is created by a composer.",
+    "category": "analogical_reasoning",
+    "metadata": {"difficulty": "easy", "type": "relationship_analogy", "explanation_required": true, "creative_professional": true}
+  },
+  {
+    "id": "analogical_reasoning_2",
+    "prompt": "Explain how the human circulatory system is similar to a city's transportation network. Identify at least 3 specific parallels.",
+    "expected_output": null,
+    "category": "analogical_reasoning",
+    "metadata": {"difficulty": "medium", "type": "system_analogy", "biological_technical": true, "multiple_parallels": true}
+  }
+]
